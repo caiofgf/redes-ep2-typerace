@@ -1,19 +1,22 @@
 package br.usp.each.typerace;
 
 
-import java.util.Set;
 import java.util.HashSet;
+import java.util.Set;
 
 public class Jogador {
 
     private String idJogador;
     private Set<String> palavras;
     private int acertos;
+    private int erros;
 
     public Jogador(String idJogador, Set<String> palavras){
         this.idJogador = idJogador;
-        this.palavras = palavras;
+        this.palavras = new HashSet<>();
+        this.palavras.addAll(palavras);
         this.acertos =0;
+        this.erros = 0;
     }
 
     public boolean verificaPalavra(String palavra){
@@ -22,13 +25,17 @@ public class Jogador {
             this.acertos++;
             return true;
     }
+    this.erros++;
     return false;
     }
     public String PalavrasMessage(){
         String resp = "";
+        int cont = 0;
         if(this.palavras.size() == 0) resp = "Você terminou as suas palavras. Digite stop para terminar o jogo para todos, ou de mais um tempo para os outros jogadores";
         else for(String palavra : this.palavras){
-            resp = palavra +" "+ resp;
+            cont++;
+            if(cont%5 == 0)resp = palavra + "\n" + resp;
+            else  resp = palavra +"     "+ resp;
         }
         return resp;
     }
@@ -39,10 +46,8 @@ public class Jogador {
     public int getAcertos(){
         return this.acertos;
     }
-    public void setPalavras(Set<String> palavras){
-        this.palavras = new HashSet<>();
-        this.palavras.addAll(palavras);
-        this.acertos = 0;
+    public int getErros(){
+        return this.erros;
     }
 }
 

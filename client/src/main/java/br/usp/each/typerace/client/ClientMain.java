@@ -28,7 +28,7 @@ public class ClientMain {
            ele deve se conectar e o seu ID?
         */
         Scanner sc = new Scanner(System.in);
-        System.out.println("Olá. Diga a porta em que deseja se conectar");
+        System.out.println("Olá. Diga a porta em que deseja se conectar\nNa duvida, vá de 8080");
         String porta = sc.nextLine();
         System.out.println("Agora digite seu id");
         String id = sc.nextLine();

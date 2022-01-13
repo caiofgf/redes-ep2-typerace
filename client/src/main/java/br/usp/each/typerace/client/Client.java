@@ -23,7 +23,7 @@ public class Client extends WebSocketClient {
     @Override
     public void onClose(int code, String reason, boolean remote) {
         // TODO: Implementar
-        System.out.println("Conexão fechada\nDigite algo para encerrar a aplicação");
+        System.out.println("Conexão fechada");
     }
 
     @Override
