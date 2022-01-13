@@ -3,7 +3,7 @@ Repositório para o EP2 de Redes de Computadores, EACH-USP - 2021/2
 
 # Integrantes
 * Caio Fernando Francisco - 11208325
-* Gabriel Melo- 10724312
+* Gabriel André Melo de Oiveira Silva - 10724312
 * Vitor Hugo Marin - 11295852
 * Integrante 4 - 4444444
 
