@@ -42,7 +42,7 @@ public class Server extends WebSocketServer {
         this.palavras.add("estetoscopio");
         this.palavras.add("maria");
         this.palavras.add("jose");
-        this.palavras.add("caixa-d'agua");
+        this.palavras.add("caixa");
         this.palavras.add("universidade");
         this.palavras.add("keralux");
         this.palavras.add("maximiliano");
